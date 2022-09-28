@@ -34,7 +34,7 @@ character_speed = 0.6
 #이벤트 루프
 running = True
 while running:
-    dt = clock.tick(120)
+    dt = clock.tick(60)
 
     print("fps : " + str(clock.get_fps()))
 
