@@ -11,7 +11,7 @@ c1 = ws["C1"]
 ws.column_dimensions["A"].width =  5
 
 # 1 행의 높이는 50 으로 설정
-ws.row_dimensions[1].height = 20
+ws.row_dimensions[1].height = 30
 
 # 스타일 적용
 # 색갈 italic = 기울기 볼드 적용
@@ -40,5 +40,8 @@ for row in ws.rows:
         if isinstance(cell.value, int) and cell.value > 90:
             cell.fill = PatternFill(fgColor="00FF00", fill_type="solid")
             cell.font = Font(color="FF0000")
+
+ws.freeze_panes = "B2"
+
 
 wb.save("sample_style.xlsx")
