@@ -19,7 +19,7 @@ ws = wb.active
 
 
 # ws.delete_rows(8, 3)
-ws.delete_cols(1, 2)
+# ws.delete_cols(1, 2)
 
 
 wb.save("sample_delete_row.xlsx")

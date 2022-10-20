@@ -44,6 +44,7 @@ enemy_width = character_size[0]
 enemy_height = character_size[1]
 enemy_x_pos = (screen_width / 2) - (enemy_width / 2)
 enemy_y_pos = (screen_height / 2) - enemy_height
+character_speed = 0.6
 
 # 폰트 정의
 game_font = pygame.font.Font(None, 40)

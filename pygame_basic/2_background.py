@@ -15,7 +15,7 @@ background = pygame.image.load("C:/Users/USER/Desktop/PythonWorkspace2/pygame_ba
 
 #이벤트 루프
 running = True
-while running :
+while running:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False

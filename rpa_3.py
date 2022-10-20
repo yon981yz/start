@@ -54,8 +54,8 @@ row_range = ws[2:6]
 # for row in ws.iter_rows():
 #     print(row[1].value)
 
-for column in ws.iter_cols():
-    print(column[1].value)
+# for column in ws.iter_cols():
+#     print(column[1].value)
 
 # for row in ws.iter_rows(min_row=2, max_row=11, min_col=2, max_col=3):
 #     # print(row[0].value, row[1].value)

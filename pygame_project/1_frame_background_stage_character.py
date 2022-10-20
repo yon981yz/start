@@ -152,6 +152,7 @@ while running:
     screen.blit(character, (character_x_pos, character_y_pos))
     screen.blit(enemy, (enemy_x_pos, enemy_y_pos))
 
+
     # 타이머 집어 넣기 
     # 경과 시간 계산
     elapsed_time = (pygame.time.get_ticks() - start_ticks) / 1000
