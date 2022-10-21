@@ -1,3 +1,4 @@
+from cProfile import run
 import pyautogui
 
 # file_menu = pyautogui.locateOnScreen("file_menu.png")
@@ -32,10 +33,16 @@ import pyautogui
 
 # 2. 범위 지정
 
-trash_icon = pyautogui.locateOnScreen("trash_icon.png", region=(1702, 632, 207, 83))
-pyautogui.moveTo(trash_icon)
+# trash_icon = pyautogui.locateOnScreen("trash_icon.png", region=(1702, 632, 207, 83))
+# pyautogui.moveTo(trash_icon)
 
 # pyautogui.mouseInfo()
 # 1854,704 185,185,185 #B9B9B9
 # 1690,632
 # 1909,751
+
+# 3. 정확도 조정
+run_btn = pyautogui.locateOnScreen("play_icon.png", confidence=0.9) #90%
+pyautogui.moveTo(run_btn)
+
+# 자동화 대상이 바로 보여지지 않는 경우 
